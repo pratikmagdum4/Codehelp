@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+                background-color: beige;
+                border: 5px solid black;
+                height: 1200px;
+                margin: 2px;
+                padding: 2px;
+                display: flex;/*This will make a flex container,
+                by default the direction is set to row*/
+                
+                
+                flex-direction: row;
+            /*    flex-wrap: wrap;*/
+                justify-content: start;
+            /* Here is the concept of wrapping
+                flex-wrap: wrap;/*inspect->Cntrl + shift + M , swiz to see the effects 
+
+                flex-wrap: wrap-reverse;/*wrap in reverse direction 
+            
+            /*Here is concept of align-items*/
+            align-items: start;
+             /*Here is concept of align-content*/
+           align-content: center;/* This removes space between boxes ,while swuizing*/
+            }
+        .box{
+           /* height: 200px;
+            width: 200px;*/
+            border: 2px solid brown;
+            margin: 2px;
+            padding: 2px;
+            font-size: 30px;
+        }
+        #box1{
+            background-color: aqua;
+       
+        order: -500;/*The box which have the least value will appear first */
+       align-self: center;
+        }
+        #box2{
+            background-color: red;
+            order :12;
+            align-self: end;
+           
+        }
+        #box3{
+            background-color: blue;
+            order :-13;
+        
+        }
+        #box4{
+            background-color: yellow;
+            order :-1;
+            
+        
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box1">Box1</div>
+        <div class="box" id="box2">Box2</div>
+        <div class="box" id="box3">Box3</div>
+        <div class="box" id="box4">Box4</div>
+    </div>
+</body>
+</html>

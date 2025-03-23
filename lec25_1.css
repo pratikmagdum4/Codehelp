@@ -1,0 +1,37 @@
+.box{
+    width: 400px;
+    height: 400px;
+    background-color: beige;
+    border: 2px solid black;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: auto;
+    transition: all 3s linear 1s;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.box:hover{
+    transform: rotate(45deg);
+     transform: scale(2);  /*  This will double the size of box */
+     /* transform: scale(0.5);  /*  This will halve the size of box */
+     /* transform: rotate(-45deg); */
+
+     /* transform: skew(45deg);
+     transform: skew(-45deg); */
+
+    transform: translate(-500px);     /* It will move in left side */
+    transform: translate(0px,300px);     /* It will move in y direction  */
+} 
+p{
+    font-size: 36px;
+}

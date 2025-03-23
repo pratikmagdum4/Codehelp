@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation ka Gyan</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 100vw;
+            height: 100vh;
+            background-color: beige;
+            border: 15px solid black;
+
+        }
+        .box{
+            width: 350px;
+            height: 80px;
+            background-color: blue;
+            border: 3px solid purple;
+            border-radius: 10px;
+            margin: 10px;   
+            position: relative;
+            animation-name: rightMovement;
+            animation-duration: 5s;/*Total time taken for journy */
+            animation-iteration-count: 1;
+            animation-delay: 2s;/*Time delay from staring  */
+            animation-timing-function: linear;/*LInear speed throughout the journy */
+            animation-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);/*It is curve */
+            animation-direction: alternate;/*It will come from destination to source */
+            animation-fill-mode: forwards;/*  It will stop there*/
+        }
+        @keyframes rightMovement {
+            from{
+                top:0;
+                left:0;
+            }
+            to{
+                top:0;
+                left: 1200px;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+        <div class="container">
+            <div class="box">
+
+            </div>
+        </div>
+</body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation ka Gyan</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 100vw;
+            height: 100vh;
+            background-color: beige;
+            border: 15px solid black;
+
+        }
+        .box{
+            width: 350px;
+            height: 80px;
+            background-color: blue;
+            border: 3px solid purple;
+            border-radius: 10px;
+            margin: 10px;   
+            position: relative;
+           /* animation-name: rightMovement;
+            animation-duration: 5s;/*Total time taken for journy */
+           /* animation-iteration-count: 1;
+            animation-delay: 2s;/*Time delay from staring  */
+          /*  animation-timing-function: linear;/*LInear speed throughout the journy */
+          /*  animation-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);/*It is curve */
+          /*  animation-direction: alternate;/*It will come from destination to source */
+           /* animation-fill-mode: forwards;/*  It will stop there*/
+
+
+            /*@keyframes duration | easing-function | delay | iteration-count
+             | direction | fill-mode | play-state | name */
+
+            animation: 5s linear 1s 2 alternate none running rightMovement   ;
+        }
+        @keyframes rightMovement {
+            from{
+                top:0;
+                left:0;
+            }
+            to{
+                top:0;
+                left: 1500px;
+            }
+            
+        }
+        .box2{
+            width: 350px;
+            height: 80px;
+            background-color: blue;
+            border: 3px solid purple;
+            border-radius: 10px;
+            margin: 10px;   
+            position: relative;
+            animation: 5s linear 1s 2 alternate none running leftMovement   ;
+        
+        }
+        @keyframes leftMovement {
+            from{
+                top:600px;
+                left:1000px;
+            }
+            to{
+                top:600px;
+                left: 0;
+            }
+            
+        }
+        #circle{
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            border: 3px solid purple;
+            border-radius: 50px;
+            margin: 10px;
+            position: relative;
+            top :30%;
+            left:45%;
+            animation: 10s linear 0s infinite alternate none running circleMovement   ;
+        }
+        @keyframes circleMovement {
+            0%{
+                top :1%;
+                left:5%;
+            }
+            30%{
+                top :5%;
+                left:90%;
+            }
+            60%{
+                top :70%;
+                left:10%;
+            }
+            100%{
+                top :75%;
+                left:90%;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+        <div class="container">
+            <div class="box"> 
+            </div>
+            <div id="circle">
+
+            </div>
+            <div class="box2">
+
+            </div>
+        </div>
+</body>
+</html>

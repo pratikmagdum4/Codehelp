@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #inlineToBlock{
+            border: 2px solid black;
+            width: 100px;
+            height: 100px;
+            margin: 30px;
+            padding: 10px;
+            background-color: red;
+            display: block;/* Now the span will behave as block element*/
+        }
+        .box{
+            width: 100px;
+            height: 100px;
+            border: 10px;
+            margin: 20px;
+            padding: 20px;
+            background-color: blue;
+             display: inline;  /* now box will behave as inline element*/
+        }
+        .mix{
+            width: 100px;
+            height: 100px;
+            border: 40px;
+            margin: 30px;
+            padding: 10px;
+            background-color: yellow;
+           /* display: inline-block; */
+           display: inline;
+        }
+    </style>
+</head>
+<body>
+    <span id="inlineToBlock">
+        This is King Pratik PM
+    </span>
+    <div class="box">
+        This is the empire of the King
+    </div>
+    <div class="mix">
+        This will have properties of both inline and block
+    </div>
+</body>
+</html>

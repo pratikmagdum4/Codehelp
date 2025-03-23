@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+           
+            border: 2px solid black;
+        }
+        img{
+            margin: 10px;
+            padding: 10px;
+        }
+        .image4{
+            position: fixed;/* It fixes the image at that position,try moving down,image will be fixed*/
+        }
+        .container{
+            position: relative;
+            height: 8000px;
+            background-color: beige;
+        }
+        .image3{
+            position: sticky;/* Try moving downside , It will remain fixed until it encounter another container ,here "box"*/
+            top: 100px;
+        }
+        .box{
+            height: 5000px;
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <img src="css1.jpg" alt="css 1" width="300px" height="300px" 
+         class="image1"/>
+        <img src="css2.jpg" alt="css 2" width="300px" height="300px" class="image2">
+        <img src="css3.png" alt="css 3" width="300px" height="300px" class="image3">
+        <img src="css4.jpg" alt="css 4" width="300px" height="300px" class="image4">
+      
+    </div>
+    <div class="box">
+
+    </div>
+</body>
+</html>
